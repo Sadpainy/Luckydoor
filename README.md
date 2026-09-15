@@ -10,9 +10,7 @@
 
 # Overview
 
-LuckyDoor is a single-player command-line game that revolves around probability and luck. Each round, the player chooses a door from a fixed set of three options. The game generates a "lucky door" using a deterministic hash chain based on time, system entropy, and round-specific nonces. If the player's choice matches the lucky door, they win the round. Otherwise, a random penalty is applied.
-
-Despite its simple core gameplay, the application implements an extensive internal status code system inspired by Android's status_t and Windows NTSTATUS conventions, providing a structured and extensible error-handling framework.
+**LuckyDoor is a single-player command-line game that revolves around probability and luck.** Each round, the player chooses a door from a fixed set of three options. The game generates a "**lucky door**" using a deterministic hash chain based on time, system entropy, and round-specific nonces. If the player's choice matches the lucky door, they win the round. Otherwise, a random penalty is applied.
 
 # Gameplay
 
