@@ -40,7 +40,9 @@ Despite its simple core gameplay, the application implements an extensive intern
    git clone https://github.com/Sadpainy/Luckydoor
    cd Luckydoor
    ```
+   
 2. Ensure Luckdoor.py is in your desired directory.
+
 3. Run the game:
    ```bash
    python Luckdoor.py
@@ -58,14 +60,6 @@ The game uses several hardcoded constants and file paths:
 # Architecture
 
 The codebase is structured around a status code system and a singleton game state.
-
-# Status Codes
-
-The application defines a set of `status codes` (`STATUS_NO_ERROR', 'STATUS_UNKNOWN_ERROR', etc.) that follow a Windows NTSTATUS-like format (high bit set for errors) but borrow names from Android's 'status_t' (e.g., 'BAD_VALUE', 'NAME_NOT_FOUND'). These codes are used for all internal function returns, providing a uniform error-handling mechanism.
-
-# Hash Chain
-
-The lucky door and penalty are determined by a multi-step hash chain. A seed string is constructed from the player's choice, round index, a time-based token, a system entropy token, and round-specific nonces. This seed is then hashed six times using alternating algorithms and salts, producing a final digest that is converted to an index.
 
 # License
 
