@@ -8,18 +8,6 @@ LuckyDoor is a single-player command-line game that revolves around probability 
 
 Despite its simple core gameplay, the application implements an extensive internal status code system inspired by Android's status_t and Windows NTSTATUS conventions, providing a structured and extensible error-handling framework.
 
-# Features
-
-· Three Door Choices: Angel, Evil, and Lucky.
-· Randomized Lucky Door: Generated using a multi-layered hash chain (MD5, SHA-1, SHA-2 family).
-· Penalty System: Three distinct penalties for losing rounds:
-  · Lockdown: A 5-second countdown lock.
-  · FortuneFile: Writes a luck report to a designated directory.
-  · InstantExit: Immediately terminates the game.
-· Persistent History: All game rounds are saved to a JSON file and can be viewed or cleared from the main menu.
-· Robust Error Handling: A custom status code system with a @status_guard decorator to catch and translate exceptions.
-· Cross-Platform Input: Supports both Windows (msvcrt) and Unix-like (termios, tty) terminals.
-
 # Gameplay
 
 1. Main Menu: Select [1] Play, [2] History, [3] Clear History, or [Ctrl+C] to exit.
@@ -48,21 +36,8 @@ Despite its simple core gameplay, the application implements an extensive intern
    python Luckdoor.py
    ```
    
-# Configuration
-
-The game uses several hardcoded constants and file paths:
-
-· History File: luckydoor_records.json (stored in the current working directory).
-· Fortune File Directory: /storage/emulated/0/Download (intended for Android environments).
-· Fortune File Name: LuckyValue.
-· Hash Algorithms: md5, sha1, sha224, sha256, sha384, sha512 (used in a 6-round hash chain).
-
-# Architecture
-
-The codebase is structured around a status code system and a singleton game state.
-
 # License
 
 Apache License 2.0.
 
-**Note: The game is designed to run on Android terminals (e.g., Termux) due to the hardcoded /storage/emulated/0/Download path for the FortuneFile penalty. On other platforms, this penalty will fail gracefully and report a STATUS_PERMISSION_DENIED error.**
+**Note: The game is designed to run on Android terminals (Termux) due to the hardcoded /storage/emulated/0/Download path for the FortuneFile penalty. On other platforms, this penalty will fail gracefully and report a `STATUS_PERMISSION_DENIED` error.**
