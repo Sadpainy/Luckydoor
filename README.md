@@ -6,7 +6,7 @@
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue?style=plastic&logo=apache&logoColor=white&labelColor=555555)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=plastic&logo=python&logoColor=white&labelColor=555555)
 
-**A terminal-based, text-driven lucky draw game written in Python. The player selects one of three doors and attempts to match the randomly generated "lucky door." The application features a persistent history system, penalty mechanics, and a robust, pseudo-system-level status code architecture.**
+**A terminal-based, text-driven lucky draw game written in Python.** The player selects one of three doors and attempts to match the randomly generated "**lucky door**."
 
 # Overview
 
@@ -16,17 +16,15 @@ Despite its simple core gameplay, the application implements an extensive intern
 
 # Gameplay
 
-1. Main Menu: Select [1] Play, [2] History, [3] Clear History, or [Ctrl+C] to exit.
-2. Choose a Door: Press 1 for Angel, 2 for Evil, or 3 for Lucky.
-3. Result: The game reveals the lucky door and indicates whether you won or lost.
-4. Penalty (on loss): A random penalty is triggered.
-5. Next Action: Press [R] to play again, [M] to return to the menu, [Q] to quit, or [H] to view history.
+1. **Main Menu**: Select [1] Play, [2] History, [3] Clear History, or [Ctrl+C] to exit.
+2. **Choose a Door**: Press 1 for Angel, 2 for Evil, or 3 for Lucky.
+3. **Result**: The game reveals the lucky door and indicates whether you won or lost.
+4. **Penalty (on loss)**: A random penalty is triggered.
+5. **Next Action**: Press [R] to play again, [M] to return to the menu, [Q] to quit, or [H] to view history.
 
 # Requirements
 
 Python 3.8 or higher.
-A terminal that supports ANSI escape sequences (for screen clearing).
-Standard library modules only (no external dependencies).
 
 # Installation
 
@@ -49,4 +47,6 @@ Standard library modules only (no external dependencies).
 
 Apache License 2.0.
 
-**Note: The game is designed to run on Android terminals (Termux) due to the hardcoded /storage/emulated/0/Download path for the FortuneFile penalty. On other platforms, this penalty will fail gracefully and report a `STATUS_PERMISSION_DENIED` error.**
+# Warning
+
+Note: The game is designed to run on **Android terminals (Termux)** due to the hardcoded **/storage/emulated/0/Download** path for the FortuneFile penalty. On other platforms, this penalty will fail gracefully and report a `STATUS_PERMISSION_DENIED` error.
