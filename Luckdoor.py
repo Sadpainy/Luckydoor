@@ -11,6 +11,7 @@ import select
 from typing import Any, Callable, Dict, Iterator, List, Optional, Tuple
 from collections import OrderedDict
 
+# Reference Android Linux Status_t Code. Define Wrapper "status_guard"
 STATUS_NO_ERROR = 0x00000000
 STATUS_UNKNOWN_ERROR = 0x80000000
 STATUS_INVALID_OPERATION = 0x80000001
