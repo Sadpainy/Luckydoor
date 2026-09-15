@@ -24,9 +24,9 @@ Despite its simple core gameplay, the application implements an extensive intern
 
 # Requirements
 
-· Python 3.8 or higher.
-· A terminal that supports ANSI escape sequences (for screen clearing).
-· Standard library modules only (no external dependencies).
+Python 3.8 or higher.
+A terminal that supports ANSI escape sequences (for screen clearing).
+Standard library modules only (no external dependencies).
 
 # Installation
 
@@ -36,6 +36,9 @@ Despite its simple core gameplay, the application implements an extensive intern
    ```
    
 2. Ensure Luckdoor.py is in your desired directory.
+```bash
+ls -la
+```
 
 3. Run the game:
    ```bash
