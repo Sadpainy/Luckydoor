@@ -4,7 +4,6 @@
 ![Build](https://img.shields.io/badge/Build-passing-brightgreen?style=plastic&labelColor=555555)
 ![Tests](https://img.shields.io/badge/Tests-passing-brightgreen?style=plastic&labelColor=555555)
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue?style=plastic&logo=apache&logoColor=white&labelColor=555555)
-![Terminal](https://img.shields.io/badge/Terminal-000000?style=plastic&logo=gnometerminal&logoColor=white&labelColor=555555)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=plastic&logo=python&logoColor=white&labelColor=555555)
 
 **A terminal-based, text-driven lucky draw game written in Python. The player selects one of three doors and attempts to match the randomly generated "lucky door." The application features a persistent history system, penalty mechanics, and a robust, pseudo-system-level status code architecture.**
