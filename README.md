@@ -36,9 +36,9 @@ Standard library modules only (no external dependencies).
    ```
    
 2. Ensure Luckdoor.py is in your desired directory.
-```bash
-ls -la
-```
+   ```bash
+   ls -la
+   ```
 
 3. Run the game:
    ```bash
